@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main class='main'>
+        <nav class='navBar'>
+            <h1>Sanskar Singh</h1>
+            <div class='navigationMenu'>
+                <a href="#aboutMe">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contactForm">Let's Connect!</a>
+                <div>
+        </nav>
+        <section class='heroSection'>
+            <img class='profileImage'
+                src='/images/DP.jpg' />
+            <div class='herosectionDetails'>
+                <h1>Sanskar Singh</h1>
+                <h3>MERN Stack Developer </h3>
+            </div>
+        </section>
+        <section class='aboutMe' id='aboutMe'>
+            <h1>What I Do..</h1>
+            <p>I am Sanskar Singh.I am pursuing B.Tech in Computer Science and currently i am in my final year of my
+                course.
+                Over the course of my college journey ,i have done some certification courses which is based on web
+                development
+                and others bootcamps .My technical skills includes
+                Data Structures and Algorithm,
+                SQL,
+                SQLite,
+                Javascript,
+                React.js,
+                Node.js,
+                MongoDB.        
+</p>
+        </section>
+        <section class='skillsAndProjects'>
+            <div class='skills' id='skills'>
+                <h1 class='cardHeading'>Skills</h1>
+                <img title='HTML' src='./images/html.svg'>
+                <img title='CSS' src='./images/css.svg'>
+                <img title='Javascript' src='./images/js.svg'>
+                <img title='Node.JS' src='./images/node.svg'>
+                <img title='React' src='./images/react.svg'>
+                <img title='MongoDB' src='./images/mongo.svg'>
+                <img title='Firebase' src='./images/firebase.svg'>
+                <img title='Redux' src='./images/redux.svg'>
+            </div>
+            <div class='projects' id='projects'>
+                <h1 class='cardHeading'>Projects</h1>
+                <div class='projectContainer'>
+                    <img src='./images/ticket.svg' />
+                    <div class='projectDescription'>
+                        <h4>Social Book</h4>
+                        <p>I tried too clone facebook forntend.
+                            Technologies used are
+                            HTML
+                            JAVASCRIPT
+                            REACTJs.</p>
+                    </div>
+                </div>
+                <div class='projectContainer'>
+                    <img src='./images/socialbook.svg' />
+                    <div class='projectDescription'>
+                        <h4>Ticket Booking</h4>
+                        <p>Its a web app where you can book a ticket.
+                            by putting your all information.
+                            Technologies Used
+                            ReactJs for frontend
+                            Node Js for Backend.
+                            MongoDb for database management of users and places.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='contactForm' id='contactForm'>
+            <h1>Let's Connect!</h2>
+                <div class='formGroup'>
+                    <label for='name'>Enter Full Name</label><br />
+                    <input type='text' id='name' placeholder='Full Name' />
+                </div>
+                <div class='formGroup'>
+                    <label for='email'>Email</label><br />
+                    <input type='text' id='email' placeholder='Email' />
+                </div>
+                <div class='formGroup'>
+                    <label for='message'>Message</label><br />
+                    <textarea placeholder="Send some message!" id="message" name="w3review" rows="4"
+                        cols="50"></textarea>
+                </div>
+                <button class='submitButton' onClick={submit()}>Connect</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
